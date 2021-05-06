@@ -4,7 +4,7 @@ public final class DAOProvider {
 
 	private static final DAOProvider instance = new DAOProvider();
 
-	private NotebookImpDao notebookDAO = new NotebookDAO();
+	private NotebookDao notebookDAO = new NotebookImplDAO();
 
 	private DAOProvider() {
 	}
@@ -13,11 +13,11 @@ public final class DAOProvider {
 		return instance;
 	}
 
-	public NotebookImpDao getNotebookDAO() {
+	public NotebookDao getNotebookDAO() {
 		return notebookDAO;
 	}
 
-	public void setNotebookDAO(NotebookImpDao notebookDAO) {
+	public void setNotebookDAO(NotebookDao notebookDAO) {
 		this.notebookDAO = notebookDAO;
 	}
 

@@ -104,7 +104,7 @@ public class Note implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Note [topic=" + topic + ", date=" + date + ", mail=" + mail + ", message=" + message + "]";
+		return "Note [topic=" + topic + ", date=" + date + ", mail=" + mail + ", message=" + message + "]" + "\r";
 	}
 
 }

@@ -20,7 +20,9 @@ public class Notebook implements Serializable {
 	public void addAllNotes(List<Note> note) {
 		notes.addAll(note);
 	}
-
+	public void addNote(Note note) {
+		notes.add(note);
+	}
 	public List<Note> getNotes() {
 		return notes;
 	}

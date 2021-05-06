@@ -10,10 +10,10 @@ import java.util.List;
 
 import by.epam.notebook.entity.Note;
 
-public class NotebookDAO implements NotebookImpDao {
+public class NotebookImplDAO implements NotebookDao {
 
 	@Override
-	public String readFile() {
+	public String read() {
 		
 		String lines = "";
 		BufferedReader reader = null;
@@ -85,7 +85,7 @@ public class NotebookDAO implements NotebookImpDao {
 	}
 
 	@Override
-	public void writeFile(String s) {
+	public void write(String s) {
 
 		File file = new File("source\\note.txt");
 		FileWriter writer = null;
